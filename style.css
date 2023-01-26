@@ -1,0 +1,67 @@
+body{
+    position: relative;
+    width: 1440px;
+    height: 1884px;
+    background: #FFFFFF;
+}
+.Logo_Nav{
+    display: flex;
+}
+.Logo{
+    position: absolute;
+    width: 61.09px;
+    height: 19px;
+    left: 0px;
+    top: 0px;
+}
+ul{
+    list-style-type: none;
+}
+.Hébergements{
+    position: absolute;
+    left: 36.22%;
+    right: 34.12%;
+    top: 0%;
+    bottom: 0%;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+/* identical to box height */
+
+    text-align: center;
+
+    color: #0065FC;
+}
+.Activités{
+    position: absolute;
+    left: 83.46%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+/* Nav/Standard */
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+/* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+}
+h1{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+}
+.Sous_Titre_Slogan{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 400;
+}
