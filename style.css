@@ -297,7 +297,9 @@ button:hover{
 
  .Trio_de_Cards{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
  .Cards{
@@ -316,6 +318,10 @@ button:hover{
     
 }
 
+#Titre_Hébergements{
+    height: 26px;
+    margin-left: 40px;
+}
 
 .Titre_Cards{
     height: 15px;
@@ -343,8 +349,8 @@ button:hover{
     color: #F2F2F2;;
 }
 
-.Afficher_Plus{
-    
-    border-style: dotted;
-    margin-left: 97px;
+#Afficher_Plus{
+    margin-left: 44px;
+    font-size: var(--18px);
+    font-weight: 700;
 }
