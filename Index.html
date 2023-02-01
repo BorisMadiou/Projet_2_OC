@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/e23d771d89.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -16,19 +16,19 @@
     <header>
         <div id="Logo_Navigation">            
             <img src="Images/Booki.png" id="Logo" alt="Logo">
-                <nav>
-                    <!-- Navigation en liste (test) -->
-                    <ul id="Navigation"> 
-                        <li id="Hébergements_Navigation">Hébergements</li>
-                        <li id="Activités_Navigation">Activités</li>
-                    </ul>
-                </nav>
+            <nav>
+                <!-- Navigation en liste (test) -->
+                <div id="Navigation"> 
+                    <h3 id="Hébergements_Navigation"><a href="#Hébergements">Hébergements</a></h3>
+                    <h3 id="Activités_Navigation"><a href="#Activités">Activités</a></h3>
+                </div>
+            </nav>
         </div>
         <!-- Division en deux du slogan pour version mobile -->
         <div id="Slogan"> 
             <div id="Titre_Slogan">
-                <h1>Trouvez votre hébergement </h1>
-                <h1>pour des vacances de rêve</h1>
+                <h1>Trouvez votre hébergement</h1>
+                <h1>&nbsppour des vacances de rêve</h1>
             </div>
             <div id="Sous_Titre_Slogan">
                 <p>En plein centre ville ou en pleine nature</p>
@@ -41,70 +41,74 @@
         <div id="Recherche_Filtre_Réponse">
             <div id="Recherche">
                 <div id="Icone_Localisation">
-                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="fa-solid fa-location-dot"></span>
                 </div>
-                <div id="Rechercher">
-                    <input type="search" id="Champ_De_Rechercher" name="" placeholder="Marseille, France">
+                <div id="Formulaire">
+                    <form action="" method="get">
+                        <div id="Champ_Formulaire">    
+                            <input type="search" name="" placeholder="Marseille, France">
+                        </div>
+                        <div id="Bouton_Formulaire">
+                            <input type="submit" value="Rechercher">
+                        </div>
+                    </form>
                 </div>
-                <div id="Boutton_Rechercher">
-                    <button>Rechercher</button>
-                </div>               
             </div>
             <div id="Filtres">
                 <div id="Texte_Filtres">
                     <p>Filtres</p>
                 </div>
                 <!-- Division en deux couples de boutons pour version mobile -->
-                <div id="Filtres_Economique_Familial">
+                <!-- <div id="Filtres_Economique_Familial"> -->
                     <!-- Pour chaque bouton, ajout d'un id pour adapter la taille du bouton
                     à son contenu -->
-                    <div class="Bouton">
-                        <div id="Economique"> 
-                            <div id="Icone_Economique">
+                    <button class="Bouton">
+                        <!-- <div id="Economique">  -->
+                            <!-- <div id="Icone_Economique"> -->
                                 <i class="fa-solid fa-money-bill-wave"></i>
-                            </div>
-                            <div id="Texte_Economique">
-                                <p>Économique</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Bouton">
-                        <div id="Familial">
-                            <div id="Icone_Familial">
+                            <!-- </div> -->
+                            <!-- <div id="Texte_Economique"> -->
+                                <h2>Économique</h2>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                    </button>
+                    <button class="Bouton">
+                        <!-- <div id="Familial"> -->
+                            <!-- <div id="Icone_Familial"> -->
                                 <i class="fa-solid fa-person"></i>
-                            </div>
-                            <div id="Texte_Familial">
-                                <p>Familial</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="Filtres_Romantique_Animaux">
-                    <div class="Bouton">
-                        <div id="Romantique">
-                            <div id="Icone_Romantique">
+                            <!-- </div>
+                            <div id="Texte_Familial"> -->
+                                <h2>Familial</h2>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                    </button>
+                <!-- </div> -->
+                <!-- <div id="Filtres_Romantique_Animaux"> -->
+                    <button class="Bouton">
+                        <!-- <div id="Romantique"> -->
+                            <!-- <div id="Icone_Romantique"> -->
                                 <i class="fa-solid fa-heart"></i>
-                            </div>
-                            <div id="Texte_Romantique">
-                                <p>Romantique</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Bouton">
-                        <div id="Animaux">
-                            <div id="Icone_Animaux">
+                            <!-- </div>
+                            <div id="Texte_Romantique"> -->
+                                <h2>Romantique</h2>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                    </button>
+                    <button class="Bouton">
+                        <!-- <div id="Animaux"> -->
+                            <!-- <div id="Icone_Animaux"> -->
                                 <i class="fa-solid fa-dog"></i>
-                            </div>
-                            <div id="Texte_Animaux">
-                                <p>Animaux autorisés</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            <!-- </div> -->
+                            <!-- <div id="Texte_Animaux"> -->
+                                <h2>Animaux autorisés</h2>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                    </button>
+                <!-- </div> -->
             </div>
             <div id="Réponses">
                 <div id="Icone_Réponses">
-                    <i class="fa-light fa-circle-info"></i>
+                    <i class="fa-solid fa-info"></i>
                 </div>
                 <!-- Division en deux blocs pour version mobile -->
                 <div id="Réponse_Partie_1">
@@ -279,10 +283,10 @@
                         </div>
                     </div>
                 </div>
-                <div id="Afficher_Plus">
-                    <p>Afficher plus</p>
-                </div>
             </article>
+            <div id="Afficher_Plus">
+                <p>Afficher plus</p>
+            </div>
         </section>
         <section id="Les_Plus_Populaires">
             <div id="Les_Plus_Populaires_icone">

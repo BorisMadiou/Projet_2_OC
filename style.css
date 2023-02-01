@@ -1,67 +1,350 @@
+
+ html{
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    background:#FFFFFF;
+    --16px: 1rem;
+    --17px: 1.0625rem;
+    --19px: 1.1875rem;
+    --18px: 1.125rem;
+    --22px: 1.375rem;
+    } 
+
 body{
-    position: relative;
-    width: 1440px;
-    height: 1884px;
-    background: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    border-style: dotted;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}  
+
+/* ......................................            
+..................HEADER.................
+ ........................................*/
+
+header a {
+    text-decoration: none;
+    color: black;    
 }
-.Logo_Nav{
+
+h1{
+    font-size: var(--22px);
+    font-weight: 700;
+    margin: 0px;
+}
+h3{
+    font-size: var(--16px);
+    font-weight: 400;
+    margin: 0px;
+}
+p{
+    margin: 0px;
+}
+
+#Logo_Navigation{
+    border-style: dotted;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#Logo{
+    padding-left: 55px;
+    padding-top: 44px;
+    width: 61.09px;
+    height: 19px;  
+}
+/* ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+} */
+
+
+#Navigation {
+    border-style: dotted;
+    display: flex;
+    text-align: center;
+    
+}
+
+#Hébergements_Navigation{
+    /* border-style: dotted; */
+    width: 162px;
+    text-align: center;
+    margin: 0px;
+    padding-top: 44px;
+    font-size: var(--16px)
+}
+#Hébergements_Navigation:hover{
+    border-top: 2px solid #0065FC;
+}
+#Hébergements_Navigation a:hover{
+    color: #0065FC;
+    font-weight: 500;
+}
+
+#Activités_Navigation{
+    /* border-style: dotted; */
+    width: 162px;
+    text-align: center;
+    margin: 0px;
+    padding-top: 44px;
+    font-size: var(--16px)
+    
+}
+#Activités_Navigation:hover{
+    border-top: 2px solid #0065FC;    
+}
+#Activités_Navigation a:hover{
+    color: #0065FC;
+    font-weight: 500;   
+}
+
+
+
+#Slogan{
+    /* border-style: dotted; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+    padding-left:55px;
+    
+}
+
+#Titre_Slogan{
+    /* border-style: dotted; */
+    display: flex;
+    height: 26px;
+    /* padding-top:5px; */
+} 
+
+#Sous_Titre_Slogan{
+    /* border-style: dotted; */
+    height: 19px;
+    font-size: var(--16px)
+}
+
+/* header{
+    display: flex;
+    flex-direction: column;
+} */
+
+/* ..............................................................            
+..................MAIN/RECHERCHE_FILTRES_REPONSE.................
+ ................................................................*/
+
+
+/* .....................RECHERCHE............................. */
+
+#Recherche{
+    padding-left: 55px;
     display: flex;
 }
-.Logo{
-    position: absolute;
-    width: 61.09px;
-    height: 19px;
-    left: 0px;
-    top: 0px;
+
+#Formulaire form{
+    display: flex;
 }
-ul{
-    list-style-type: none;
+
+#Icone_Localisation{
+    width: 50px;
+    height: 49px;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
-.Hébergements{
-    position: absolute;
-    left: 36.22%;
-    right: 34.12%;
-    top: 0%;
-    bottom: 0%;
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-/* identical to box height */
-
-    text-align: center;
-
-    color: #0065FC;
+#Icone_Localisation span{
+    font-size: var(--18px);
 }
-.Activités{
-    position: absolute;
-    left: 83.46%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
 
-/* Nav/Standard */
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-/* identical to box height */
-
-    text-align: center;
-
-    color: #000000;
+#Champ_Formulaire{
+    width: 236px;
+    height: 49px;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-h1{
-    font-family: Raleway;
-    font-style: normal;
+
+#Champ_Formulaire input{
+border: none;
+}
+
+::placeholder{
+    color: black;
+    font-family:'Raleway', sans-serif;
+    font-size: var(--18px);
     font-weight: 700;
 }
-.Sous_Titre_Slogan{
-    font-family: Raleway;
-    font-style: normal;
+
+#Bouton_Formulaire{
+    /* background: #0065FC;
+    width: 132px;
+    height: 49px;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#Bouton_Formulaire input{
+    background: #0065FC;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    width: 132px;
+    height: 49px;
+    color: #FFFFFF;
+    font-family:'Raleway', sans-serif;
+    font-size: var(--18px);
+    font-weight: 700;
+}
+
+/* .....................FILTRES............................. */
+h2{
+    font-size: var(--17px);
+    font-weight: 700;
+}
+
+#Texte_Filtres{
+    font-size: var(--18px);
+    font-weight: 700;
+}
+
+
+
+#Filtres{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 55px;
+    height: 46px;
+    max-width: 914px;
+}
+
+.Bouton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-grow: 0.05;
+    height: 46px;
+    background-color: #FFFFFF;    
+}
+.Bouton i{
+    color: #0065FC;
+    font-size: var(--22px);
+}
+
+button:hover{
+    background-color: #DEEBFF;
+}
+
+/* .....................REPONSES............................. */
+
+#Icone_Réponses i{
+    color: #0065FC;
+    border: 1px solid #D9D9D9;
+    width: 22px;
+    height: 22px;
+    font-size: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Réponses p{
+    font-size: var(--16px);
     font-weight: 400;
+
+}
+
+#Réponses{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 55px;
+    max-width: 451px;
+    height: 19px;
+}
+
+/* ..............................................................            
+..................MAIN/SECTION/HEBERGEMENTS.................
+ ................................................................*/
+
+ #Hébergements{
+    width: 880px;
+    height: 626px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    margin-left: 55px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+ }
+
+ .Trio_de_Cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+ .Cards{
+    width: 246px;
+    height: 199px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    
+ }
+
+.Cards img{
+    width: 236px;
+    height: 114px;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+
+
+.Titre_Cards{
+    height: 15px;
+    margin-top: 4px;
+}
+ 
+ 
+.Prix_Cards{
+    height: 15px;
+    margin-top: 9px;
+}
+
+.Note_Cards{
+    display: flex;
+    height: 15px;
+    margin-top: 9px;
+}
+
+.Icone_Etoile_Bleue{
+    font-size: 12px;
+    color: #0065FC;
+}
+.Icone_Etoile_Grise{
+    font-size: 12px;
+    color: #F2F2F2;;
+}
+
+.Afficher_Plus{
+    
+    border-style: dotted;
+    margin-left: 97px;
 }
