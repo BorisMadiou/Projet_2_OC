@@ -80,7 +80,7 @@ header {
 .menu_navigation {
     width: 10.125rem;
     padding-top: 2.625rem;
-    font-size: var(--16px)
+    font-size: var(--16px);
     font-weight: 400;
     border-top: 2px solid transparent;
 }
@@ -97,7 +97,7 @@ header {
 
 .slogan p {
     padding-top: 0.5rem;
-    font-size: var(--16px)
+    font-size: var(--16px);
     font-weight: 400;
 }
 
@@ -593,7 +593,7 @@ footer {
     .menu_navigation {
         padding-bottom: 1.438rem;
         width: 50%;
-        font-size: var(--16px)
+        font-size: var(--16px);
         font-weight: 400;
         border-top: none;
         border-bottom: 3px solid #F2F2F2;
